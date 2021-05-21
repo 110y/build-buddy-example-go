@@ -1,0 +1,14 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library", "go_test")
+
+go_library(
+    name = "foo",
+    srcs = ["foo.go"],
+    importpath = "github.com/110y/build-buddy-example-go/internal/foo",
+    visibility = ["//:__subpackages__"],
+)
+
+go_test(
+    name = "foo_test",
+    srcs = ["foo_test.go"],
+    deps = [":foo"],
+)
