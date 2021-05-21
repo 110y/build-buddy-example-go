@@ -3,7 +3,7 @@ package foo_test
 import (
 	"testing"
 
-	"github.com/110y/build-buddy-example/internal/foo"
+	"github.com/110y/build-buddy-example-go/internal/foo"
 )
 
 func TestSum(t *testing.T) {
